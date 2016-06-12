@@ -31,11 +31,11 @@ setup(
         'console_scripts': ['csvfaker = csvfaker.csvfaker:main']
     },
     install_requires=[
-        'faker',
+        'fake-factory',
     ],
     license='Apache License 2.0',
     url='https://github.com/pereorga/csvfaker',
-    version='1.0.1',
+    version='1.0.2',
     description='Generate a CSV file with fake data.',
     long_description=open('README.rst').read(),
     author='Pere Orga',
