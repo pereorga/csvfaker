@@ -71,7 +71,10 @@ def main():
     for r in range(args.rows):
         row = []
         for provider_method in args.methods:
-            cell = unicode(getattr(fake, provider_method)()).encode("utf-8")
+            if sys.version_info >= (3, 0):
+                cell = getattr(fake, provider_method)()
+            else:
+                cell = unicode(getattr(fake, provider_method)()).encode("utf-8")
             if args.replace_newline is not None:
                 cell = cell.replace('\n', args.replace_newline).replace('\r', '')
             row.append(cell)
