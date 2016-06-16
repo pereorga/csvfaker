@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 
-
 from setuptools import setup
-
 
 setup(
     name='csvfaker',
@@ -35,7 +33,7 @@ setup(
     ],
     license='Apache License 2.0',
     url='https://github.com/pereorga/csvfaker',
-    version='1.0.3',
+    version='1.0.4-dev',
     description='Generate a CSV file with fake data.',
     long_description=open('README.rst').read(),
     author='Pere Orga',

@@ -11,6 +11,9 @@ import inspect
 import faker
 
 
+__version__ = '1.0.4-dev'
+
+
 def provider_methods(provider_method):
     """Validate list of provider methods."""
     fake = faker.Factory.create()
@@ -56,6 +59,8 @@ def main():
                         help='Replace newline character with provided string.')
     parser.add_argument('-d', '--delimiter', type=str, default=',',
                         help='Output column delimiter.')
+    parser.add_argument('--version', action='version',
+                        version='%(prog)s {version}'.format(version=__version__))
     args = parser.parse_args()
 
     if args.list_fakes:
