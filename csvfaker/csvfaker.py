@@ -11,7 +11,7 @@ import inspect
 import faker
 
 
-__version__ = '1.0.4-dev'
+__version__ = '1.0.4'
 
 
 def provider_methods(provider_method):
