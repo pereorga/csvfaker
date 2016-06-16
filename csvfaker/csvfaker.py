@@ -53,6 +53,8 @@ def main():
                         help='Number of rows to generate. If omitted it defaults to 10.')
     parser.add_argument('-l', '--locale', type=str,
                         help="Locale to use. Examples: 'en_US', 'es'.")
+    parser.add_argument('-s', '--seed', type=str,
+                        help="Seed to use. Generated result will be the same when called with the same seed.")
     parser.add_argument('-n', '--no-headers-row', dest='headers', action='store_false',
                         help='Do not output columns headers.')
     parser.add_argument('-p', '--replace-newline', type=str,
@@ -72,6 +74,9 @@ def main():
         writer.writerow(args.methods)
 
     fake = faker.Factory.create(args.locale)
+
+    if args.seed:
+        fake.seed(args.seed)
 
     for r in range(args.rows):
         row = []
