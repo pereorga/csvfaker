@@ -32,12 +32,12 @@ setup(
         'console_scripts': ['csvfaker = csvfaker.csvfaker:main']
     },
     install_requires=[
-        'fake-factory',
+        'Faker',
     ],
     license='Apache License 2.0',
     url='https://github.com/pereorga/csvfaker',
-    version='1.0.4',
-    description='Generate a CSV file with fake data.',
+    version='1.0.5',
+    description='Generate CSV files with fake data.',
     long_description=open('README.rst').read(),
     author='Pere Orga',
     author_email='pere@orga.cat',
