@@ -45,6 +45,10 @@ Installation
 
     pip install csvfaker
 
+or
+
+    pip3 install csvfaker
+
 
 Author
 ------
