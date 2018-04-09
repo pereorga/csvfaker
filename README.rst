@@ -1,7 +1,7 @@
 csvfaker
 ========
 
-Generate CSV files with fake data, using `Faker`_.
+Generate CSV files with fake data. Uses the `Faker` package.
 
 
 Usage
