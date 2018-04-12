@@ -40,11 +40,6 @@ Show a list of all available generator properties
     csvfaker --list-fakes
 
 
-Fake providers
---------------
-This uses the Faker (https://github.com/joke2k/faker) package. For a list of all available generator properties (like ``name`` and ``address``) see the documentation: http://faker.readthedocs.io/en/master/providers.html 
-
-
 Installation
 ------------
 
@@ -53,6 +48,11 @@ Installation
 or
 
     pip3 install csvfaker
+
+
+Fake providers
+--------------
+This uses the Faker (https://github.com/joke2k/faker) package. For a list of all available generator properties (like ``name`` and ``address``) see the documentation: http://faker.readthedocs.io/en/master/providers.html 
 
 
 Author
