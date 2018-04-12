@@ -1,7 +1,7 @@
 csvfaker
 ========
 
-Generate CSV files with fake data. Uses the `Faker` package.
+Generate CSV files with fake data.
 
 
 Usage
@@ -35,9 +35,14 @@ Generate 100 rows of names and addresses. Replace generated newline characters w
 
     csvfaker -r 100 name address --replace-newline=', '
 
-Show a list of all available fakes
+Show a list of all available generator properties
 
     csvfaker --list-fakes
+
+
+Fake providers
+--------------
+This uses the [Faker](https://github.com/joke2k/faker) package. For a list of all available generator properties (like ``name`` and ``address``) see the [documentation](http://faker.readthedocs.io/en/master/providers.html). 
 
 
 Installation
