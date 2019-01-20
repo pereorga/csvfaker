@@ -69,7 +69,7 @@ def main():
         show_fakes()
         exit(0)
 
-    writer = csv.writer(sys.stdout, delimiter=args.delimiter)
+    writer = csv.writer(sys.stdout, delimiter=args.delimiter, lineterminator='\n')
     if args.headers:
         writer.writerow(args.methods)
 
